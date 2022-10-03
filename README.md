@@ -4,6 +4,8 @@
 
 ## 功能介绍
 
+基于 `archlinux:base-devel`
+
 1. 国内源
 2. 内置工具
    1. oh-my-zsh
