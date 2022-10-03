@@ -1,0 +1,55 @@
+" 开启语法高亮
+syntax on
+
+" 按键映射
+noremap K 5k
+noremap J 5j
+noremap L g_
+noremap H ^
+
+" S 保存
+map S :w<CR>
+" Q 退出
+map Q :q<CR>
+" 刷新 vimrc配置
+map R :source $MYVIMRC<CR>
+
+" 行号
+set number
+" 相对行号
+set relativenumber
+" 显示光标线
+set cursorline
+" 换行
+set wrap
+" : 命令 菜单
+set wildmenu
+" / 高亮搜索
+set hlsearch
+" 清空旧的搜索高亮
+exec "nohlsearch"
+" 边输入边高亮
+set incsearch
+" 忽略大小写搜索
+set ignorecase
+" 智能大小写
+set smartcase
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-airline/vim-airline'
+Plug 'connorholyday/vim-snazzy'
+
+call plug#end()
+
+" snazzy主题
+color snazzy
+" 透明背景
+" let g:SnazzyTransparent = 1
+
+
+
+
+
+
+

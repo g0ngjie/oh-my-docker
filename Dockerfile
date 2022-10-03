@@ -7,6 +7,10 @@ RUN mkdir -p /root/.config
 VOLUME ["/root/.config","/root/repos","/root/.vscode-server/extensions", "/root/go/bin", "/root/.ssh"]
 # end
 
+# basic tools
+RUN yes | pacman -S curl tree vim wget
+# end
+
 # oh-my-zsh
 RUN yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 RUN git clone https://github.com/zsh-users/zsh-autosuggestions.git /root/.oh-my-zsh/custom/plugins/zsh-autosuggestions &&\
@@ -14,10 +18,6 @@ RUN git clone https://github.com/zsh-users/zsh-autosuggestions.git /root/.oh-my-
 ADD .zshrc /root/.zshrc
 ENV SHELL /bin/zsh
 #end
-
-# basic tools
-RUN yes | pacman -S curl tree vim wget
-# end
 
 # Install Go
 RUN yes | pacman -Syy; yes | pacman -S go
@@ -54,4 +54,9 @@ RUN yes | pacman -S fzf ranger neofetch htop openssh net-tools exa the_silver_se
 # dotfiles
 RUN echo "export TZ='Asia/Shanghai'" >> /root/.zshrc; \
 	echo "alias ra=ranger" >> /root/.zshrc;
+# end
+
+# vim
+RUN mkdir /root/.vim
+ADD .vim /root/.vim
 # end

@@ -8,6 +8,8 @@
 2. 内置工具
    1. oh-my-zsh
    2. vim
+      > vimrc 默认配置
+      > plugin: vim-airline / vim-snazzy
    3. git
 3. 内置命令
    1. nvm
