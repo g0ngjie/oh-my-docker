@@ -4,7 +4,7 @@ ADD mirrorlist /etc/pacman.d/mirrorlist
 RUN yes | pacman -Syu
 RUN yes | pacman -S git zsh
 RUN mkdir -p /root/.config
-VOLUME ["/root/.config","/root/repos","/root/.vscode-server/extensions", "/root/go/bin", "/root/.ssh"]
+VOLUME ["/root/.config","/root/repos","/root/.vscode-server/extensions", "/root/go/bin", "/root/.ssh", "/root/.vim"]
 # end
 
 # basic tools
