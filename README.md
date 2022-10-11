@@ -8,15 +8,12 @@
 
 1. 国内源
 2. 内置工具
-   1. oh-my-zsh
-   2. vim
-      > vimrc 默认配置
-      > plugin: vim-airline / vim-snazzy
-   3. git
+   - oh-my-zsh
+   - vim: `vimrc 默认配置` + `plugin: vim-airline / vim-snazzy`
+   - git
 3. 内置命令
-   1. nvm
-      > node --lts / npm / pnpm / yarn / yrm / typescript / http-server
-   2. go
+   - nvm: `node latest --lts` / `npm` / `pnpm` / `yarn` / `yrm` / `typescript` / `http-server`
+   - go
 
 ## 常见问题
 
