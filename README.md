@@ -21,6 +21,10 @@
 
 1. 项目放到 `~/repos` 目录下，在 Linux 环境中进行开发。
 
+#### git merge 时报错 `error: unable to start editor 'vi'`
+
+1. 设置 git 默认编辑器 `git config --global core.editor vim`， 原因是因为没有安装`vi`编辑器
+
 #### 如何连接数据库？
 
 1. 新建一个 Docker network
