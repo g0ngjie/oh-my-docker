@@ -1,6 +1,6 @@
 # Oh My Docker
 
-参考自 [FrankFang/oh-my-docker](https://github.com/FrankFang/oh-my-docker)，打造自己的 vscode 开发环境
+参考自 [FrankFang/oh-my-docker](https://github.com/FrankFang/oh-my-docker)
 
 ## 功能介绍
 
